@@ -1,0 +1,210 @@
+/*
+ASSIGNMENT RULES
+- All the answers must be written in JavaScript
+- You can ask for help, reach the Teaching Assistants if needed
+- The solution must be available for the tutors by the end of the day (5PM CET)
+- You can Google / use StackOverflow BUT we suggest you to use just the material provided
+- You can test your code in a separate file or de-commenting the single exercises in this one.
+You can use the bash terminal, the VSCode terminal or the one embedded in your Operating System if you're using macOS or Linux.
+
+*/
+/* EXERCISE 1
+Enumerate and describe the main datatypes in JavaScript. Try to explain the concepts as you were speaking to a 12 years old.
+*/
+
+/* WRITE YOUR ANSWER HERE */
+
+The main datatypes in JaScript are:
+
+NUMBERS // Numbers can be integers or floats
+5 // integer -- an integral number
+5.3 // float --> a floating point number
+or 5.5555
+
+Variable examples:
+
+let number = 5
+let number = 5.5
+let number = 5.555
+
+STRINGS // Practically a "Text"
+A string must be surrounded by a String Delimiter that can be:
+
+// Double quotes
+"String Delimiter"
+
+// Single quotes
+'String Delimiter'
+
+// Backticks
+`String Delimiter`
+
+Variable examples:
+
+let name = "Emilian"
+let surname = 'Kasemi'
+let profession = `Developer`
+let justKidding = "PS: Just kidding!"
+
+console.log(name + " " + surname + " is" + " a" + " " + profession)
+console.log(justKidding)
+
+BOOLEAN // TRUE or FALSE
+
+5 > 3 // --> True because 5 IS greater than 3
+10 < 2 // --> False because 10 IS NOT less than 2
+
+// or using "strictly equal" sign
+"Emilian" === "Emilian" // sure it is true because both datatypes and values are equal
+
+// or using "is not equal" sign
+"Emilian" !== "Emilian" // --> True because "Emilian IS NOT EQUAL to Emilian" is a true statement, so this statement is TRUE
+
+PS: We also have Null and Undefined values:
+
+undefined // variable declared but not defined yet
+null // not existing, total absence of value
+
+
+
+/* EXERCISE 2
+Try to describe what a variable is, in your own words.
+*/ 
+
+/* WRITE YOUR ANSWER HERE */
+
+A VARIABLE is practically an INFO BOX. A box which contains information or data. The data can be of various categories (Datatypes)
+These data or information has values and these values can change over time. This is why it's called a "variable", it varies, it can change.
+
+For example the data or information might be Strive School: 
+
+school (datatype) // this is for example in the category of "schools" --> is the same thing as saying 10 is in the category of NUMBERS (number datatype)
+
+let striveSchool // immagine if there was a "type --> school" of variables, striveSchool would be the name of a variable with type school
+
+This can be specializations:
+
+let fullStackDevelopmentClass = 50 // 50 can be a value. Meaning the number of people joining this class
+// the variable fullStackDevelopmentClass is of type NUMBERS and has the value 50
+
+let isJavaScriptTheMostDifficultLanguage = False; // This variable is of type BOOl and it gives a true or false value
+// In this case Javascript is not teh mos diffucult language, so the value of this BOOL is FALSE
+
+*** // Stands to you in choosing the name of the variable, but it is a good practice to ALWAYS choose meaningful names, 
+// so when you come back to your code you can easily read it, you or someone else who will read it
+
+
+
+/* EXERCISE 3
+Write the code to execute an addition (a sum) of the numbers 12 and 20.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+let x = 12;
+let y = 20;
+
+let sum = x + y;
+
+console.log(sum);
+
+/* EXERCISE 4
+Create a variable named x containing the number 12.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+let x = 12;
+
+/* EXERCISE 5
+Create a variable called name containing the string John Doe.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+let name = "John Doe"
+
+/* EXERCISE 6
+Execute a subtraction between the number 12 and the variable x, which is storing the value 12.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+let x = 12;
+
+console.log(12 - x);
+
+
+/* EXERCISE 7
+Create two variables: name1 and name2. name1 is equal to john, name2 is equal to John.
+Verify that name1 is different from name2. 
+Verify then, that name1 and name2 are equals if both lowercase (without changing the value of name2).
+*/
+
+/* WRITE YOUR CODE HERE */
+
+let name1;
+let name2;
+
+name1 = "john";
+name2 = "John";
+
+console.log(name1 === name2); // FALSE --> proves they are different
+
+or:
+
+console.log(name1 !== name2); // TRUE --> proves they are different
+
+name2 = name2.toLowerCase;
+
+console.log(name1 === name2); // proves they are the same without changing the value for name2
+
+
+
+/* EXERCISE 8
+Create a variable named x (its value must be less than 10). Write the code to print the literal value of x (ex.: if x is 1 print "one", if 5 print "five" etc.).
+*/
+
+/* WRITE YOUR CODE HERE */
+
+let x = 5;
+
+x = "five";
+
+console.log(x);
+
+
+/* EXERCISE 9
+[Extra] Insert a value in a variable based on the resut of a ternary if (topic not covered during lesson, try to search it by yourself, tomorrow morning we'll discuss it together ;) )
+*/
+
+/* WRITE YOUR CODE HERE */
+
+// ternary operator ===>>> condition ? expression_1 : expression_2;
+
+// if statement example
+
+let age = 15;
+let lowerSpeedMessage;
+
+if (speed > 90)
+{
+	lowerSpeedMessage = "Yes"
+	console.log(lowerSpeedMessage);
+} else
+
+{
+	lowerSpeedMessage = "No"
+	console.log(lowerSpeedMessage);
+}
+
+// ternary operator example
+
+let speed = 120;
+let lowerSpeedMessage = speed > 90 ? 'yes' : 'no';
+
+console.log(lowerSpeedMessage);
+
+
+/* WHEN YOU ARE FINISHED
+Upload the .js file on Eduflow before 5PM CET. In the next days we'll also learn how to use GIT!
